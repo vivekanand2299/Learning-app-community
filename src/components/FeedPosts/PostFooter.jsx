@@ -65,6 +65,7 @@ const PostFooter = ({ post, isProfilePage, creatorProfile }) => {
 						<Input
 							variant={"flushed"}
 							placeholder={"Add a comment..."}
+							_placeholder={{ color: 'gray' }}
 							fontSize={14}
 							onChange={(e) => setComment(e.target.value)}
 							value={comment}

@@ -12,7 +12,7 @@ const Sidebar = () => {
 		<Box
 			height={"100vh"}
 			borderRight={"1px solid"}
-			borderColor={"whiteAlpha.300"}
+			borderColor={"rgb(219, 219, 219)"}
 			py={8}
 			position={"sticky"}
 			top={0}
@@ -22,6 +22,7 @@ const Sidebar = () => {
 			<Flex direction={"column"} gap={10} w='full' height={"full"}>
 				<Link to={"/"} as={RouterLink} pl={2} display={{ base: "none", md: "block" }} cursor='pointer'>
 					<InstagramLogo />
+					{/* <img src="/image-removebg-preview.png" id="logo" alt="logo"/> */}
 				</Link>
 				<Link
 					to={"/"}
@@ -64,6 +65,7 @@ const Sidebar = () => {
 						<BiLogOut size={25} />
 						<Button
 							display={{ base: "none", md: "block" }}
+							color={"black"}
 							variant={"ghost"}
 							_hover={{ bg: "transparent" }}
 							isLoading={isLoggingOut}
